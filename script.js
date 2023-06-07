@@ -20,19 +20,46 @@ function activateDescription(element) {
 }
 
 function bwcolor(element) {
-  var bwImage = element.querySelector(".bw");
-  var colors = element.querySelector(".color");
+  var bwImage = document.querySelector(".bw");
+  var colors = document.querySelector(".color");
   var part1 = document.getElementById("part1");
+  var bwImage2 = document.querySelector(".bw2");
+  var colors2 = document.querySelector(".color2");
+  var part2 = document.getElementById("part2");
+  var bwImage3 = document.querySelector(".bw3");
+  var colors3 = document.querySelector(".color3");
+  var part3 = document.getElementById("part3");
+  var bwImage4 = document.querySelector(".bw4");
+  var colors4 = document.querySelector(".color4");
+  var part4 = document.getElementById("part4");
+  var bwImage5 = document.querySelector(".bw5");
+  var colors5 = document.querySelector(".color5");
+  var part5 = document.getElementById("part5");
+  var description = document.querySelector(".description");
   
   if (bwImage.classList.contains("active") && colors.classList.contains("active")) {
     bwImage.classList.remove("active");
     colors.classList.remove("active");
     part1.classList.remove("active");
+    bwImage2.classList.remove("active");
+    colors2.classList.remove("active");
+    part2.classList.remove("active");
+    bwImage3.classList.remove("active");
+    colors3.classList.remove("active");
+    part3.classList.remove("active");
+    bwImage4.classList.remove("active");
+    colors4.classList.remove("active");
+    part4.classList.remove("active");
+    bwImage5.classList.remove("active");
+    colors5.classList.remove("active");
+    part5.classList.remove("active");
+    description.classList.remove("active");
     
   } else {
     bwImage.classList.add("active");
     colors.classList.add("active");
     part1.classList.add("active");
+    description.classList.add("active");
     
   }
 }
@@ -99,7 +126,6 @@ function bwcolor5(element) {
 }
 
 part1.addEventListener("click", function () {
-  activateDescription(part1);
   bwcolor(part1);
   
 });
