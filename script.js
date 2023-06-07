@@ -3,6 +3,11 @@ var part2 = document.getElementById('part2');
 var part3 = document.getElementById('part3');
 var part4 = document.getElementById('part4');
 var part5 = document.getElementById('part5');
+var btn1 = document.getElementById('btn1');
+var btn2 = document.getElementById('btn2');
+var btn3 = document.getElementById('btn3');
+var btn4 = document.getElementById('btn4');
+var btn5 = document.getElementById('btn5');
 
 
 function activateDescription(element) {
@@ -61,6 +66,31 @@ part4.addEventListener('click', function() {
 });
 
 part5.addEventListener('click', function() {
+  activateDescription(part5);
+  bwcolor5(part5);
+});
+
+btn1.addEventListener('click', function(){
+  activateDescription(part1);
+  bwcolor(part1)
+});
+
+btn2.addEventListener('click', function() {
+  activateDescription(part2);
+  bwcolor2(part2);
+});
+
+btn3.addEventListener('click', function() {
+  activateDescription(part3);
+  bwcolor3(part3);
+});
+
+btn4.addEventListener('click', function() {
+  activateDescription(part4);
+  bwcolor4(part4);
+});
+
+btn5.addEventListener('click', function() {
   activateDescription(part5);
   bwcolor5(part5);
 });
